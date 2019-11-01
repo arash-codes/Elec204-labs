@@ -1,0 +1,4 @@
+AR sevensegment behavioral "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" sub00/vhpl03 1524671525
+AR main behavioral "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd" sub00/vhpl01 1524671523
+EN main NULL "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd" sub00/vhpl00 1524671522
+EN sevensegment NULL "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" sub00/vhpl02 1524671524

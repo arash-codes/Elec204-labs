@@ -1,0 +1,474 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: SevenSegment.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SevenSegment.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SevenSegment"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-vq100
+
+---- Source Options
+Top Module Name                    : SevenSegment
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd" in Library work.
+Architecture behavioral of Entity main is up to date.
+Compiling vhdl file "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" in Library work.
+WARNING:HDLParsers:1406 - "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" Line 49. No sensitivity list and no wait in the process
+Architecture behavioral of Entity sevensegment is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SevenSegment> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Main> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SevenSegment> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" line 51: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <SlowClock>
+Entity <SevenSegment> analyzed. Unit <SevenSegment> generated.
+
+Analyzing Entity <Main> in library <work> (Architecture <Behavioral>).
+Entity <Main> analyzed. Unit <Main> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Main>.
+    Related source file is "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd".
+    Found 28-bit up accumulator for signal <Counter>.
+    Found 28-bit comparator less for signal <Counter$cmp_lt0000> created at line 48.
+    Found 1-bit register for signal <Temp>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Main> synthesized.
+
+
+Synthesizing Unit <SevenSegment>.
+    Related source file is "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd".
+    Found 8x16-bit ROM for signal <Counter$rom0000>.
+    Found 3-bit up counter for signal <Counter>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+Unit <SevenSegment> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x16-bit ROM                                          : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 28-bit up accumulator                                 : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 1
+ 28-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 8x16-bit ROM                                          : 1
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 28-bit up accumulator                                 : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 28-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SevenSegment> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SevenSegment, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SevenSegment.ngr
+Top Level Output File Name         : SevenSegment
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 121
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 20
+#      LUT2                        : 12
+#      LUT3                        : 14
+#      LUT4                        : 6
+#      MUXCY                       : 37
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 32
+#      FD                          : 1
+#      FDR                         : 31
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 10
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-5 
+
+ Number of Slices:                       29  out of    704     4%  
+ Number of Slice Flip Flops:             32  out of   1408     2%  
+ Number of 4 input LUTs:                 54  out of   1408     3%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of     68    39%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 29    |
+SlowclockEntity/Temp               | NONE(Counter_2)        | 3     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.567ns (Maximum Frequency: 218.964MHz)
+   Minimum input arrival time before clock: 4.914ns
+   Maximum output required time after clock: 6.819ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.567ns (frequency: 218.964MHz)
+  Total number of paths / destination ports: 1443 / 57
+-------------------------------------------------------------------------
+Delay:               4.567ns (Levels of Logic = 29)
+  Source:            SlowclockEntity/Counter_0 (FF)
+  Destination:       SlowclockEntity/Counter_27 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SlowclockEntity/Counter_0 to SlowclockEntity/Counter_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.495   0.446  SlowclockEntity/Counter_0 (SlowclockEntity/Counter_0)
+     LUT2:I1->O            1   0.562   0.000  SlowclockEntity/Maccum_Counter_lut<0> (SlowclockEntity/Maccum_Counter_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  SlowclockEntity/Maccum_Counter_cy<0> (SlowclockEntity/Maccum_Counter_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<1> (SlowclockEntity/Maccum_Counter_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<2> (SlowclockEntity/Maccum_Counter_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<3> (SlowclockEntity/Maccum_Counter_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<4> (SlowclockEntity/Maccum_Counter_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<5> (SlowclockEntity/Maccum_Counter_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<6> (SlowclockEntity/Maccum_Counter_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<7> (SlowclockEntity/Maccum_Counter_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<8> (SlowclockEntity/Maccum_Counter_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<9> (SlowclockEntity/Maccum_Counter_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<10> (SlowclockEntity/Maccum_Counter_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<11> (SlowclockEntity/Maccum_Counter_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<12> (SlowclockEntity/Maccum_Counter_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<13> (SlowclockEntity/Maccum_Counter_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<14> (SlowclockEntity/Maccum_Counter_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<15> (SlowclockEntity/Maccum_Counter_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<16> (SlowclockEntity/Maccum_Counter_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<17> (SlowclockEntity/Maccum_Counter_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<18> (SlowclockEntity/Maccum_Counter_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<19> (SlowclockEntity/Maccum_Counter_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<20> (SlowclockEntity/Maccum_Counter_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<21> (SlowclockEntity/Maccum_Counter_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<22> (SlowclockEntity/Maccum_Counter_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<23> (SlowclockEntity/Maccum_Counter_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<24> (SlowclockEntity/Maccum_Counter_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<25> (SlowclockEntity/Maccum_Counter_cy<25>)
+     MUXCY:CI->O           0   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<26> (SlowclockEntity/Maccum_Counter_cy<26>)
+     XORCY:CI->O           1   0.654   0.000  SlowclockEntity/Maccum_Counter_xor<27> (Result<27>)
+     FDR:D                     0.197          SlowclockEntity/Counter_27
+    ----------------------------------------
+    Total                      4.567ns (4.121ns logic, 0.446ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SlowclockEntity/Temp'
+  Clock period: 2.858ns (frequency: 349.913MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               2.858ns (Levels of Logic = 1)
+  Source:            Counter_1 (FF)
+  Destination:       Counter_1 (FF)
+  Source Clock:      SlowclockEntity/Temp rising
+  Destination Clock: SlowclockEntity/Temp rising
+
+  Data Path: Counter_1 to Counter_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.495   0.987  Counter_1 (Counter_1)
+     LUT2:I0->O            2   0.561   0.380  Mrom_Counter_rom00001111 (Number_3_OBUF)
+     FDR:R                     0.435          Counter_1
+    ----------------------------------------
+    Total                      2.858ns (1.491ns logic, 1.367ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 235 / 28
+-------------------------------------------------------------------------
+Offset:              4.914ns (Levels of Logic = 30)
+  Source:            Sum<0> (PAD)
+  Destination:       SlowclockEntity/Counter_27 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Sum<0> to SlowclockEntity/Counter_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.824   0.465  Sum_0_IBUF (Sum_0_IBUF)
+     LUT2:I0->O            1   0.561   0.000  SlowclockEntity/Maccum_Counter_lut<0> (SlowclockEntity/Maccum_Counter_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  SlowclockEntity/Maccum_Counter_cy<0> (SlowclockEntity/Maccum_Counter_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<1> (SlowclockEntity/Maccum_Counter_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<2> (SlowclockEntity/Maccum_Counter_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<3> (SlowclockEntity/Maccum_Counter_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<4> (SlowclockEntity/Maccum_Counter_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<5> (SlowclockEntity/Maccum_Counter_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<6> (SlowclockEntity/Maccum_Counter_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<7> (SlowclockEntity/Maccum_Counter_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<8> (SlowclockEntity/Maccum_Counter_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<9> (SlowclockEntity/Maccum_Counter_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<10> (SlowclockEntity/Maccum_Counter_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<11> (SlowclockEntity/Maccum_Counter_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<12> (SlowclockEntity/Maccum_Counter_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<13> (SlowclockEntity/Maccum_Counter_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<14> (SlowclockEntity/Maccum_Counter_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<15> (SlowclockEntity/Maccum_Counter_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<16> (SlowclockEntity/Maccum_Counter_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<17> (SlowclockEntity/Maccum_Counter_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<18> (SlowclockEntity/Maccum_Counter_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<19> (SlowclockEntity/Maccum_Counter_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<20> (SlowclockEntity/Maccum_Counter_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<21> (SlowclockEntity/Maccum_Counter_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<22> (SlowclockEntity/Maccum_Counter_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<23> (SlowclockEntity/Maccum_Counter_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<24> (SlowclockEntity/Maccum_Counter_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<25> (SlowclockEntity/Maccum_Counter_cy<25>)
+     MUXCY:CI->O           0   0.065   0.000  SlowclockEntity/Maccum_Counter_cy<26> (SlowclockEntity/Maccum_Counter_cy<26>)
+     XORCY:CI->O           1   0.654   0.000  SlowclockEntity/Maccum_Counter_xor<27> (Result<27>)
+     FDR:D                     0.197          SlowclockEntity/Counter_27
+    ----------------------------------------
+    Total                      4.914ns (4.449ns logic, 0.465ns route)
+                                       (90.5% logic, 9.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SlowclockEntity/Temp'
+  Total number of paths / destination ports: 43 / 15
+-------------------------------------------------------------------------
+Offset:              6.819ns (Levels of Logic = 2)
+  Source:            Counter_1 (FF)
+  Destination:       Number<3> (PAD)
+  Source Clock:      SlowclockEntity/Temp rising
+
+  Data Path: Counter_1 to Number<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.495   0.987  Counter_1 (Counter_1)
+     LUT2:I0->O            2   0.561   0.380  Mrom_Counter_rom00001111 (Number_3_OBUF)
+     OBUF:I->O                 4.396          Number_3_OBUF (Number<3>)
+    ----------------------------------------
+    Total                      6.819ns (5.452ns logic, 1.367ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.33 secs
+ 
+--> 
+
+Total memory usage is 313864 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

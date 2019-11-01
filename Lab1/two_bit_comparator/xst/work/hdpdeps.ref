@@ -1,0 +1,7 @@
+V3 3
+FL "C:/Elec 204 digital design/two_bit_comparator/main.vhd" 2019/08/22.16:21:01 P.20131013
+EN work/main 1566484037 \
+      FL "C:/Elec 204 digital design/two_bit_comparator/main.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/main/Behavioral 1566484038 \
+      FL "C:/Elec 204 digital design/two_bit_comparator/main.vhd" EN work/main 1566484037

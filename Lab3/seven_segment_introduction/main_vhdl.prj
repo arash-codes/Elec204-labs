@@ -1,0 +1,6 @@
+vhdl work "C:\Elec 204 digital design\seven_segment_introduction\slowerClock.vhd"
+vhdl work "C:\Elec 204 digital design\seven_segment_introduction\driver.vhd"
+vhdl work "C:\Elec 204 digital design\seven_segment_introduction\decoder.vhd"
+vhdl work "C:\Elec 204 digital design\seven_segment_introduction\sevenSegment.vhd"
+vhdl work "C:\Elec 204 digital design\seven_segment_introduction\ALU.vhd"
+vhdl work "C:\Elec 204 digital design\seven_segment_introduction\main.vhd"

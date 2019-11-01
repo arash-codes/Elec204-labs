@@ -1,0 +1,12 @@
+AR slowerclock behavioral "C:/Elec 204 digital design/seven_segment_introduction/slowerClock.vhd" sub00/vhpl01 1568067395
+AR sevensegment behavioral "C:/Elec 204 digital design/seven_segment_introduction/sevenSegment.vhd" sub00/vhpl07 1568067401
+AR driver behavioral "C:/Elec 204 digital design/seven_segment_introduction/driver.vhd" sub00/vhpl03 1568067397
+AR main behavioral "C:/Elec 204 digital design/seven_segment_introduction/main.vhd" sub00/vhpl09 1568067405
+EN slowerclock NULL "C:/Elec 204 digital design/seven_segment_introduction/slowerClock.vhd" sub00/vhpl00 1568067394
+AR decoder behavioral "C:/Elec 204 digital design/seven_segment_introduction/decoder.vhd" sub00/vhpl05 1568067399
+EN main NULL "C:/Elec 204 digital design/seven_segment_introduction/main.vhd" sub00/vhpl08 1568067404
+EN sevensegment NULL "C:/Elec 204 digital design/seven_segment_introduction/sevenSegment.vhd" sub00/vhpl06 1568067400
+AR alu behavioral "C:/Elec 204 digital design/seven_segment_introduction/ALU.vhd" sub00/vhpl11 1568067403
+EN driver NULL "C:/Elec 204 digital design/seven_segment_introduction/driver.vhd" sub00/vhpl02 1568067396
+EN decoder NULL "C:/Elec 204 digital design/seven_segment_introduction/decoder.vhd" sub00/vhpl04 1568067398
+EN alu NULL "C:/Elec 204 digital design/seven_segment_introduction/ALU.vhd" sub00/vhpl10 1568067402

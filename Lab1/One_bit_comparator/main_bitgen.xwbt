@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Elec 204 digital design\One_bit_comparator\main.ncd
+OUTFILE=C:\Elec 204 digital design\One_bit_comparator\main.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=C:\Elec 204 digital design\One_bit_comparator
+LICENSE=WebPack
+USER_INFO=211484013_0_0_533

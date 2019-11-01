@@ -1,0 +1,15 @@
+V3 7
+FL "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd" 2017/10/24.17:01:27 P.20131013
+EN work/Main 1524671522 \
+      FL "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Main/Behavioral 1524671523 \
+      FL "E:/coursework/Elec 204 digital design/TestProject1/Main.vhd" \
+      EN work/Main 1524671522
+FL "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" 2017/10/27.15:12:18 P.20131013
+EN work/SevenSegment 1524671524 \
+      FL "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Sevensegment/Behavioral 1524671525 \
+      FL "E:/coursework/Elec 204 digital design/TestProject1/sevensegment.vhd" \
+      EN work/SevenSegment 1524671524 CP work/main

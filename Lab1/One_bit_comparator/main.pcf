@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Aug 21 13:30:08 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "BG" LOCATE = SITE "P6" LEVEL 1;
+COMP "EQ" LOCATE = SITE "P13" LEVEL 1;
+COMP "A" LOCATE = SITE "P15" LEVEL 1;
+COMP "B" LOCATE = SITE "P94" LEVEL 1;
+COMP "AG" LOCATE = SITE "P16" LEVEL 1;
+SCHEMATIC END;
+

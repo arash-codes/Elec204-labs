@@ -1,0 +1,7 @@
+net A(0) loc = "P15";
+net A(1) loc = "P12";
+net B(0) loc = "P94";
+net B(1) loc = "P90";
+net AG loc = "P16";
+net BG loc = "P6";
+net EQ loc = "P13";

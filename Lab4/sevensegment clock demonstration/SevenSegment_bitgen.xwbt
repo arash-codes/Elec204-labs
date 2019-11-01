@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\coursework\Elec 204 digital design\sevensegment2\SevenSegment.ncd
+OUTFILE=E:\coursework\Elec 204 digital design\sevensegment2\SevenSegment.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=E:\coursework\Elec 204 digital design\sevensegment2
+LICENSE=WebPack
+USER_INFO=211404939_0_0_776

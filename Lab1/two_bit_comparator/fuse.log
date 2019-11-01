@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Elec 204 digital design/two_bit_comparator/simulate_main_isim_beh.exe -prj C:/Elec 204 digital design/two_bit_comparator/simulate_main_beh.prj work.simulate_main 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Elec 204 digital design/two_bit_comparator/main.vhd" into library work
+Parsing VHDL file "C:/Elec 204 digital design/two_bit_comparator/simulate_main.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity main [main_default]
+Compiling architecture behavior of entity simulate_main
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\simulate_main_isim_beh.exe.sim\libPortability.dll".
+Compiled 5 VHDL Units
+Built simulation executable C:/Elec 204 digital design/two_bit_comparator/simulate_main_isim_beh.exe
+Fuse Memory Usage: 29352 KB
+Fuse CPU Usage: 561 ms

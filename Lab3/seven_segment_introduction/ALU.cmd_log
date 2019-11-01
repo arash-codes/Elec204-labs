@@ -1,0 +1,1 @@
+vhdtdtfi -prj seven_segment_introduction -o "C:/Elec 204 digital design/seven_segment_introduction/ALU.vhi" -module ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ALU.vhd 

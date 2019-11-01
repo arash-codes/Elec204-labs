@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/coursework/Elec 204 digital design/TestProject1/aa.ucf" -p xc3s50a-vq100-5 "SevenSegment.ngc" SevenSegment.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o SevenSegment_map.ncd SevenSegment.ngd SevenSegment.pcf 
+par -w -intstyle ise -ol high -t 1 SevenSegment_map.ncd SevenSegment.ncd SevenSegment.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SevenSegment.twx SevenSegment.ncd -o SevenSegment.twr SevenSegment.pcf 
+bitgen -intstyle ise -f SevenSegment.ut SevenSegment.ncd 
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/coursework/Elec 204 digital design/TestProject1/aa.ucf" -p xc3s50a-vq100-5 "SevenSegment.ngc" SevenSegment.ngd  
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/coursework/Elec 204 digital design/TestProject1/aa.ucf" -p xc3s50a-vq100-5 "SevenSegment.ngc" SevenSegment.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o SevenSegment_map.ncd SevenSegment.ngd SevenSegment.pcf 
+par -w -intstyle ise -ol high -t 1 SevenSegment_map.ncd SevenSegment.ncd SevenSegment.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SevenSegment.twx SevenSegment.ncd -o SevenSegment.twr SevenSegment.pcf 
+bitgen -intstyle ise -f SevenSegment.ut SevenSegment.ncd 
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/coursework/Elec 204 digital design/TestProject1/aa.ucf" -p xc3s50a-vq100-5 "SevenSegment.ngc" SevenSegment.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o SevenSegment_map.ncd SevenSegment.ngd SevenSegment.pcf 
+par -w -intstyle ise -ol high -t 1 SevenSegment_map.ncd SevenSegment.ncd SevenSegment.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SevenSegment.twx SevenSegment.ncd -o SevenSegment.twr SevenSegment.pcf 
+bitgen -intstyle ise -f SevenSegment.ut SevenSegment.ncd 
+xst -intstyle ise -ifn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.xst" -ofn "E:/coursework/Elec 204 digital design/sevensegment2/SevenSegment.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/coursework/Elec 204 digital design/TestProject1/aa.ucf" -p xc3s50a-vq100-5 "SevenSegment.ngc" SevenSegment.ngd  
+map -intstyle ise -p xc3s50a-vq100-5 -cm area -ir off -pr off -c 100 -o SevenSegment_map.ncd SevenSegment.ngd SevenSegment.pcf 
+par -w -intstyle ise -ol high -t 1 SevenSegment_map.ncd SevenSegment.ncd SevenSegment.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SevenSegment.twx SevenSegment.ncd -o SevenSegment.twr SevenSegment.pcf 
+bitgen -intstyle ise -f SevenSegment.ut SevenSegment.ncd 

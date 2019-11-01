@@ -1,0 +1,2 @@
+vhdl work "../TestProject1/Main.vhd"
+vhdl work "../TestProject1/sevensegment.vhd"

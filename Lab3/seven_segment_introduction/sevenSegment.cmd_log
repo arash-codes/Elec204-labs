@@ -1,0 +1,1 @@
+vhdtdtfi -prj seven_segment_introduction -o "C:/Elec 204 digital design/seven_segment_introduction/sevenSegment.vhi" -module sevenSegment -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work slowerClock.vhd -lib work driver.vhd -lib work decoder.vhd -lib work sevenSegment.vhd 

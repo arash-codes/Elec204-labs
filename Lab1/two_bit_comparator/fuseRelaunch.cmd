@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Elec 204 digital design/two_bit_comparator/simulate_main_isim_beh.exe" -prj "C:/Elec 204 digital design/two_bit_comparator/simulate_main_beh.prj" "work.simulate_main" 
