@@ -1,0 +1,4 @@
+work	"decoder.vhd"
+work	"driver.vhd"
+work	"sevenSegment.vhd"
+work	"slowerClock.vhd"

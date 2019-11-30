@@ -1,0 +1,20 @@
+
+NET "SevenSegcontrol[0]" LOC = P50;
+NET "SevenSegcontrol[1]" LOC = P49;
+NET "SevenSegcontrol[2]" LOC = P52;
+NET "SevenSegcontrol[3]" LOC = P56;
+NET "SevenSegcontrol[4]" LOC = P59;
+NET "SevenSegcontrol[5]" LOC = P57;
+NET "SevenSegcontrol[6]" LOC = P60;
+NET "SevenSegcontrol[7]" LOC = P61;
+
+NET "SevenSegbus[7]" LOC = P71;
+NET "SevenSegbus[6]" LOC = P62;
+NET "SevenSegbus[5]" LOC = P65;
+NET "SevenSegbus[4]" LOC = P72;
+NET "SevenSegbus[3]" LOC = P73;
+NET "SevenSegbus[2]" LOC = P98;
+NET "SevenSegbus[1]" LOC = P64;
+NET "SevenSegbus[0]" LOC = P70;
+
+NET "clk" LOC = P40;

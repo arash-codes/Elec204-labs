@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Elec 204 digital design\sevensegtest\sevensegtest\main.ncd
+OUTFILE=C:\Elec 204 digital design\sevensegtest\sevensegtest\main.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=C:\Elec 204 digital design\sevensegtest\sevensegtest
+LICENSE=WebPack
+USER_INFO=211484013_0_0_533

@@ -1,0 +1,1 @@
+vhdtdtfi -prj sevensegtest -o C:/Users/yalat17/Desktop/project/project/project/sevensegtest/decoder.vhi -module decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work decoder.vhd 

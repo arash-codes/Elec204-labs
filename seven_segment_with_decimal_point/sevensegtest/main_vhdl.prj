@@ -1,0 +1,5 @@
+vhdl work "C:\Elec 204 digital design\sevensegtest\sevensegtest\slowerClock.vhd"
+vhdl work "C:\Elec 204 digital design\sevensegtest\sevensegtest\driver.vhd"
+vhdl work "C:\Elec 204 digital design\sevensegtest\sevensegtest\decoder.vhd"
+vhdl work "C:\Elec 204 digital design\sevensegtest\sevensegtest\sevenSegment.vhd"
+vhdl work "C:\Elec 204 digital design\sevensegtest\sevensegtest\main.vhd"
